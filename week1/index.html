@@ -1,23 +1,58 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Contact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
 
+  <section>
+    <h2>About Us</h2>
+    <p>Welcome to our website. We are committed to delivering high-quality web experiences using modern frameworks and tools.</p>
+  </section>
 
-<h2>About Us</h2> 
-<p>Welcome to our website. We are committed to delivering high-quality web 
-experiences using modern frameworks and tools.</p> 
-<h2>Contact Us</h2> 
+  <section>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-<form> 
-<label for="name">Name:</label><br /> 
-<input type="text" id="name" name="name"><br /> 
-<label for="email">Email:</label><br /> 
-<input type="email" id="email" name="email"><br /> 
-<label for="message">Message:</label><br /> 
-<textarea id="message" name="message"></textarea><br /> 
-<input type="submit" value="Submit"> 
-</form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-</body> 
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+</body>
 </html>
-
